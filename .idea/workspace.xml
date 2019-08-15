@@ -2,7 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="composite" />
+      <config projectName="Project" targetName="bin/decorator" />
+      <config projectName="Project" targetName="bin/main" />
+      <config projectName="Project" targetName="bin/composite" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -12,24 +14,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c0cd42-da03-42fe-b50f-69175ab0c639" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inc/composite.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/composite.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/decorator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decorator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Main.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Main.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +74,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="composite" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="composite" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="composite">
+  <component name="RunManager" selected="CMake Application.bin/decorator">
+    <configuration name="bin/composite" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="bin/composite" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="bin/composite">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="bin/decorator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="bin/decorator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="bin/decorator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bin/main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="bin/main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="bin/main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.bin/composite" />
+      <item itemvalue="CMake Application.bin/decorator" />
+      <item itemvalue="CMake Application.bin/main" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565843488065</updated>
       <workItem from="1565843489375" duration="6636000" />
-      <workItem from="1565850174174" duration="1272000" />
+      <workItem from="1565850174174" duration="5467000" />
     </task>
     <servers />
   </component>

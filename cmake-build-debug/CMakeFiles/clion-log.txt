@@ -1,4 +1,37 @@
 /snap/clion/81/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ynakanishi/workspace/design_patern
+CMake Warning (dev) at CMakeLists.txt:4 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "bin/main" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:8 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "bin/composite" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:13 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "bin/decorator" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/ynakanishi/workspace/design_patern

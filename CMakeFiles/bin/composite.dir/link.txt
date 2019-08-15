@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/bin/composite.dir/src/composite.cpp.o  -o bin/composite 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ynakanishi/workspace/design_patern/inc/decorator.h
+iostream
+-
+
+/home/ynakanishi/workspace/design_patern/src/decorator.cpp
+iostream
+-
+../inc/decorator.h
+/home/ynakanishi/workspace/design_patern/inc/decorator.h
+

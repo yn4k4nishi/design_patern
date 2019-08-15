@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named composite
+# Target rules for targets named bin/decorator
 
 # Build rule for target.
-composite: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 composite
-.PHONY : composite
+bin/decorator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bin/decorator
+.PHONY : bin/decorator
 
 # fast build rule for target.
-composite/fast:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/build
-.PHONY : composite/fast
+bin/decorator/fast:
+	$(MAKE) -f CMakeFiles/bin/decorator.dir/build.make CMakeFiles/bin/decorator.dir/build
+.PHONY : bin/decorator/fast
+
+#=============================================================================
+# Target rules for targets named bin/main
+
+# Build rule for target.
+bin/main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bin/main
+.PHONY : bin/main
+
+# fast build rule for target.
+bin/main/fast:
+	$(MAKE) -f CMakeFiles/bin/main.dir/build.make CMakeFiles/bin/main.dir/build
+.PHONY : bin/main/fast
+
+#=============================================================================
+# Target rules for targets named bin/composite
+
+# Build rule for target.
+bin/composite: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bin/composite
+.PHONY : bin/composite
+
+# fast build rule for target.
+bin/composite/fast:
+	$(MAKE) -f CMakeFiles/bin/composite.dir/build.make CMakeFiles/bin/composite.dir/build
+.PHONY : bin/composite/fast
 
 src/composite.o: src/composite.cpp.o
 
@@ -129,7 +155,7 @@ src/composite.o: src/composite.cpp.o
 
 # target to build an object file
 src/composite.cpp.o:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.o
+	$(MAKE) -f CMakeFiles/bin/composite.dir/build.make CMakeFiles/bin/composite.dir/src/composite.cpp.o
 .PHONY : src/composite.cpp.o
 
 src/composite.i: src/composite.cpp.i
@@ -138,7 +164,7 @@ src/composite.i: src/composite.cpp.i
 
 # target to preprocess a source file
 src/composite.cpp.i:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.i
+	$(MAKE) -f CMakeFiles/bin/composite.dir/build.make CMakeFiles/bin/composite.dir/src/composite.cpp.i
 .PHONY : src/composite.cpp.i
 
 src/composite.s: src/composite.cpp.s
@@ -147,8 +173,62 @@ src/composite.s: src/composite.cpp.s
 
 # target to generate assembly for a file
 src/composite.cpp.s:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.s
+	$(MAKE) -f CMakeFiles/bin/composite.dir/build.make CMakeFiles/bin/composite.dir/src/composite.cpp.s
 .PHONY : src/composite.cpp.s
+
+src/decorator.o: src/decorator.cpp.o
+
+.PHONY : src/decorator.o
+
+# target to build an object file
+src/decorator.cpp.o:
+	$(MAKE) -f CMakeFiles/bin/decorator.dir/build.make CMakeFiles/bin/decorator.dir/src/decorator.cpp.o
+.PHONY : src/decorator.cpp.o
+
+src/decorator.i: src/decorator.cpp.i
+
+.PHONY : src/decorator.i
+
+# target to preprocess a source file
+src/decorator.cpp.i:
+	$(MAKE) -f CMakeFiles/bin/decorator.dir/build.make CMakeFiles/bin/decorator.dir/src/decorator.cpp.i
+.PHONY : src/decorator.cpp.i
+
+src/decorator.s: src/decorator.cpp.s
+
+.PHONY : src/decorator.s
+
+# target to generate assembly for a file
+src/decorator.cpp.s:
+	$(MAKE) -f CMakeFiles/bin/decorator.dir/build.make CMakeFiles/bin/decorator.dir/src/decorator.cpp.s
+.PHONY : src/decorator.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/bin/main.dir/build.make CMakeFiles/bin/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/bin/main.dir/build.make CMakeFiles/bin/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/bin/main.dir/build.make CMakeFiles/bin/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -157,11 +237,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... composite"
 	@echo "... edit_cache"
+	@echo "... bin/decorator"
+	@echo "... bin/main"
+	@echo "... bin/composite"
 	@echo "... src/composite.o"
 	@echo "... src/composite.i"
 	@echo "... src/composite.s"
+	@echo "... src/decorator.o"
+	@echo "... src/decorator.i"
+	@echo "... src/decorator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

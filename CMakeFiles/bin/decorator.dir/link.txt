@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/bin/decorator.dir/src/decorator.cpp.o  -o bin/decorator 
