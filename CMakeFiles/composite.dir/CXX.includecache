@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ynakanishi/workspace/design_patern/inc/composite.h
+iostream
+-
+vector
+-
+
+/home/ynakanishi/workspace/design_patern/src/composite.cpp
+iostream
+-
+../inc/composite.h
+/home/ynakanishi/workspace/design_patern/inc/composite.h
+

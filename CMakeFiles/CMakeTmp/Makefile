@@ -23,6 +23,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -48,17 +51,17 @@ RM = /snap/clion/81/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ynakanishi/workspace/design_patern
+CMAKE_SOURCE_DIR = /home/ynakanishi/workspace/design_patern/CMakeFiles/CMakeTmp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ynakanishi/workspace/design_patern
+CMAKE_BINARY_DIR = /home/ynakanishi/workspace/design_patern/CMakeFiles/CMakeTmp
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	@echo "Running CMake to regenerate build system..."
 	/snap/clion/81/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -69,8 +72,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/81/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@echo "Running CMake cache editor..."
+	/snap/clion/81/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -79,10 +82,10 @@ edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
 # The main all target
-all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ynakanishi/workspace/design_patern/CMakeFiles /home/ynakanishi/workspace/design_patern/CMakeFiles/progress.marks
+all:
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ynakanishi/workspace/design_patern/CMakeFiles/CMakeTmp/CMakeFiles /home/ynakanishi/workspace/design_patern/CMakeFiles/CMakeTmp/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ynakanishi/workspace/design_patern/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ynakanishi/workspace/design_patern/CMakeFiles/CMakeTmp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -105,74 +108,61 @@ preinstall/fast:
 	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
-# clear depends
-depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-.PHONY : depend
-
 #=============================================================================
-# Target rules for targets named composite
+# Target rules for targets named cmTC_9fd74
 
 # Build rule for target.
-composite: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 composite
-.PHONY : composite
+cmTC_9fd74:
+	$(MAKE) -f CMakeFiles/Makefile2 cmTC_9fd74
+.PHONY : cmTC_9fd74
 
 # fast build rule for target.
-composite/fast:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/build
-.PHONY : composite/fast
+cmTC_9fd74/fast:
+	$(MAKE) -f CMakeFiles/cmTC_9fd74.dir/build.make CMakeFiles/cmTC_9fd74.dir/build
+.PHONY : cmTC_9fd74/fast
 
-src/composite.o: src/composite.cpp.o
+feature_tests.o: feature_tests.cxx.o
 
-.PHONY : src/composite.o
+.PHONY : feature_tests.o
 
 # target to build an object file
-src/composite.cpp.o:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.o
-.PHONY : src/composite.cpp.o
+feature_tests.cxx.o:
+	$(MAKE) -f CMakeFiles/cmTC_9fd74.dir/build.make CMakeFiles/cmTC_9fd74.dir/feature_tests.cxx.o
+.PHONY : feature_tests.cxx.o
 
-src/composite.i: src/composite.cpp.i
+feature_tests.i: feature_tests.cxx.i
 
-.PHONY : src/composite.i
+.PHONY : feature_tests.i
 
 # target to preprocess a source file
-src/composite.cpp.i:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.i
-.PHONY : src/composite.cpp.i
+feature_tests.cxx.i:
+	$(MAKE) -f CMakeFiles/cmTC_9fd74.dir/build.make CMakeFiles/cmTC_9fd74.dir/feature_tests.cxx.i
+.PHONY : feature_tests.cxx.i
 
-src/composite.s: src/composite.cpp.s
+feature_tests.s: feature_tests.cxx.s
 
-.PHONY : src/composite.s
+.PHONY : feature_tests.s
 
 # target to generate assembly for a file
-src/composite.cpp.s:
-	$(MAKE) -f CMakeFiles/composite.dir/build.make CMakeFiles/composite.dir/src/composite.cpp.s
-.PHONY : src/composite.cpp.s
+feature_tests.cxx.s:
+	$(MAKE) -f CMakeFiles/cmTC_9fd74.dir/build.make CMakeFiles/cmTC_9fd74.dir/feature_tests.cxx.s
+.PHONY : feature_tests.cxx.s
 
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
-	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... composite"
+	@echo "... cmTC_9fd74"
 	@echo "... edit_cache"
-	@echo "... src/composite.o"
-	@echo "... src/composite.i"
-	@echo "... src/composite.s"
+	@echo "... feature_tests.o"
+	@echo "... feature_tests.i"
+	@echo "... feature_tests.s"
 .PHONY : help
 
 
 
 #=============================================================================
 # Special targets to cleanup operation of make.
-
-# Special rule to run CMake to check the build system integrity.
-# No rule that depends on this can have commands that come from listfiles
-# because they might be regenerated.
-cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-.PHONY : cmake_check_build_system
 
